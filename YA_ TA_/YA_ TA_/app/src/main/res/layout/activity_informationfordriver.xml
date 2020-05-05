@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationForDriver2"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/btnEnd2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button"
+        android:text="운 전 완 료"
+        android:textColor="#373737"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="19dp"
+        android:background="@drawable/textview"
+        android:text="휴대폰 번호"
+        android:textColor="#373737"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Phone_of_rider"
+        app:layout_constraintEnd_toStartOf="@+id/Phone_of_rider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Phone_of_rider" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/textview"
+        android:text="탑승자 이름"
+        android:textColor="#373737"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Name_of_rider"
+        app:layout_constraintEnd_toStartOf="@+id/Name_of_rider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Name_of_rider" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:text="* 탑승자가 위치 파악을 위해서 전화를 받을 거예요!"
+        android:textColor="#373737"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Phone_of_rider" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="129dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="26dp"
+        android:text="전화를 걸어 위치를 알려주세요."
+        android:textColor="#373737"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnd2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/Name_of_rider"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="18dp"
+        android:text="탑승자가"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Phone_of_rider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Phone_of_rider"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="37dp"
+        android:text="없습니다"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/Name_of_rider" />
+
+</android.support.constraint.ConstraintLayout>

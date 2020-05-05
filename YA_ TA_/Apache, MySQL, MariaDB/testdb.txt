@@ -1,0 +1,69 @@
+Require all granted
+
+SET PASSWORD FOR root@localhost = PASSWORD('tOehdn1214');
+quit
+
+SET PASSWORD FOR root@localhost = PASSWORD('tOehdn1214');
+create database testdb DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+create user shadow98a identified by 'tOehdn1214';
+grant all privileges on testdb.* to 'shadow98a'@'localhost' identified by 'tOehdn1214';
+quit
+
+show databases;
+use testdb;
+create table person(
+id bigint(20) unsigned not null auto_increment,
+StudentID varchar(255) not null,
+Pwd varchar(255) not null,
+Name varchar(255) not null,
+Phone varchar(255) not null,
+VehicleID varchar(255) not null,
+primary key (id)
+)DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+show tables;
+insert into person(StudentID, Pwd, Name, Phone, VehicleID) values('60172147', 'tOehdn1214', '김주현', '01048223898','차량번호');
+select * from person;
+truncate person;
+select * from person;
+create table request(
+id bigint(20) unsigned not null auto_increment,
+StudentID varchar(255) not null,
+Path varchar(255) not null,
+primary key (id)
+)DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+show tables;
+insert into request(StudentID, Path) values('60172147', '1');
+select * from request;
+truncate request;
+insert into request(StudentID, Path) values('0', '0');
+select * from request;
+create table approval(
+id bigint(20) unsigned not null auto_increment,
+StudentID varchar(255) not null,
+Path varchar(255) not null,
+primary key (id)
+)DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+show tables;
+insert into approval(StudentID, Path) values('60172147', '1');
+select * from approval;
+truncate approval;
+insert into approval(StudentID, Path) values('0', '0');
+select * from approval;
+create table uncomfortable(
+id bigint(20) unsigned not null auto_increment,
+StudentID varchar(255) not null,
+uncomfortable varchar(255) not null,
+primary key (id)
+)DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+show tables;
+insert into uncomfortable(StudentID, uncomfortable) values('60172147', 'uncomfortable');
+select * from uncomfortable;
+truncate uncomfortable;
+select * from uncomfortable;
+quit
+
+
+
+
+
+

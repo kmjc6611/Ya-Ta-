@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.yata">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="YA, TA!"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".uncomfortable" />
+        <activity android:name=".UserSignIn1" />
+        <activity android:name=".UserSignIn2" />
+        <activity android:name=".DriverSignIn1" />
+        <activity android:name=".DriverSignIn3" />
+        <activity android:name=".InformationForDriver" />
+        <activity android:name=".InformationForDriver2" />
+        <activity android:name=".DriverLoginActivity" />
+        <activity android:name=".UserLoginActivity" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".SelectPath1" />
+        <activity android:name=".SelectPath2" />
+        <activity android:name=".ConnectActivity1" />
+        <activity android:name=".ConnectActivity2" />
+        <activity android:name=".MainActivity" />
+        <!--<activity android:name=".UsersAdapter"></activity>-->
+    </application>
+
+</manifest>
